@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @font-face {
+        font-family: 'Red Hat Mono', monospace;
+        src: url(Red_Hat_Mono/RedHatMono-VariableFont_wght.ttf);
+    }
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    display: flex;
+    font-family: 'Red Hat Mono', monospace;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    background-image: url(imagem/saloá.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+}
+.hour{
+    background-color: #B9BF04;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px 0 10px 15px;
+    border-radius: 20px;
+    box-shadow: 9px 4px 34px 0px rgba(0,0,0,0.2);
+}
+.minutes{
+    background-color: #B9BF04;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px 0 10px 15px;
+    border-radius: 20px;
+    box-shadow: 9px 4px 34px 0px rgba(0,0,0,0.4);
+}
+.seconds{
+    background-color: #B9BF04;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px 0 10px 15px;
+    border-radius: 20px;
+    box-shadow: 9px 4px 34px 0px rgba(0,0,0,0.4);
+}
+p{
+    font-size: 14px;
+}
+.hou{
+    position: relative;
+    top: 110px;
+    left: -85px;
+}
+.min{
+    position: relative;
+    top: 110px;
+    left: -90px;
+}
+.sec{
+    position: relative;
+    top: 110px;
+    left: -95px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #282828;
+    color:#ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media(width: 800px){
+    div{
+        display: flex;
+        max-width: 340px;
+        justify-content: space-between;
+        font-size: 45px;
+    }
+    .hour, .minutes, .seconds{
+        width: 90px;
+        height: 90px;
+    }
+    .hou{
+        position: relative;
+        top: 55px;
+        left: -42px;
+    }
+    .min{
+        position: relative;
+        top: 55px;
+        left: -48px;
+    }
+    .sec{
+        position: relative;
+        top: 55px;
+        left: -50px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
