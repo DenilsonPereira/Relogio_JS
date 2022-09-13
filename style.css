@@ -82,15 +82,26 @@ footer{
     bottom: 0;
     left: 0;
 }
-@media(width: 400px){
+@media screen and (max-width: 768px){
     div{
-        width: 400px;
+        width: 90%;
         font-size: 45px;
     }
     .hour, .minutes, .seconds{
         width: 90px;
         height: 90px;
     }
+
+    .hour{
+        padding: 10px 0 10px 28px;
+    }
+    .minutes{
+        padding: 10px 0 10px 40px;
+    }
+    .seconds{
+        padding: 10px 0 10px 50px;
+    }
+
     .hou{
         position: relative;
         top: 55px;
