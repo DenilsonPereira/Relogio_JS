@@ -7,6 +7,13 @@
         font-family: 'Red Hat Mono', monospace;
         src: url(Red_Hat_Mono/RedHatMono-VariableFont_wght.ttf);
     }
+    font-size: 16px;
+}
+:root{
+    --green: #B9BF04;
+    --black: #282828;
+    --white: #FFFFFF;
+    --transparent: rgba(255, 255, 255, 0.2);
 }
 html,
 body{
@@ -17,7 +24,7 @@ body{
     font-family: 'Red Hat Mono', monospace;
     align-items: center;
     justify-content: center;
-    background-color: #282828;
+    background-color: var(--black);
     background-image: url(imagem/saloá.jpg);
     background-repeat: no-repeat;
     background-position: center ;
@@ -27,57 +34,43 @@ body{
 div{
     display: flex;
     justify-content: space-around;
-    color: #ffffff;
-    width: 500px;
+    color: var(--white);
+    width: 40%;
+    height: auto;
     font-size: 100px;
     font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--transparent);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
 }
 .box{
-    background-color: #B9BF04;
-    width: 150px;
+    background-color: var(--green);
+    width: 30%;
     height: 150px;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 9px 4px 34px 0px rgba(0,0,0,0.4);
 }
-.hour{
-    padding: 10px 0 10px 40px;
-}
-.minutes{
-    padding: 10px 0 10px 60px;
-}
-.seconds{
-    padding: 10px 0 10px 70px;
+.hour, .minutes, .seconds{
+    display: block;
+    text-align: center;
 }
 p{
-    font-size: 14px;
+    font-size: .8rem;
 }
-.hou{
-    position: relative;
-    top: 110px;
-    left: -85px;
-}
-.min{
-    position: relative;
-    top: 110px;
-    left: -90px;
-}
-.sec{
-    position: relative;
-    top: 110px;
-    left: -95px;
+.hou, .min, .sec{
+    margin-top: -10px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 footer{
     width: 100%;
     height: 40px;
     text-align: center;
     padding-top: 10px;
-    background-color: #282828;
-    color:#ffffff;
+    background-color: var(--black);
+    color:var(--white);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -85,39 +78,5 @@ footer{
 @media screen and (max-width: 768px){
     div{
         width: 90%;
-        font-size: 45px;
-    }
-    .hour, .minutes, .seconds{
-        width: 90px;
-        height: 90px;
-    }
-
-    .hour{
-        padding: 10px 0 10px 28px;
-    }
-    .minutes{
-        padding: 10px 0 10px 40px;
-    }
-    .seconds{
-        padding: 10px 0 10px 50px;
-    }
-
-    .hou{
-        position: relative;
-        top: 55px;
-        left: -42px;
-    }
-    .min{
-        position: relative;
-        top: 55px;
-        left: -48px;
-    }
-    .sec{
-        position: relative;
-        top: 55px;
-        left: -50px;
-    }
-    p{
-        font-size: 10px;
     }
 }
